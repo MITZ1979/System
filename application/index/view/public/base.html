@@ -1,0 +1,27 @@
+<!--base（父模板）基础模板-->
+{include file="public/meta" /}
+{block name="seo"}
+    网站标题关键字与描述
+{/block}
+{include file="public/header" /}
+
+{include file="public/menu" /}
+
+{block name="content"}
+
+{include file="public/layout" /}
+    页面主题内容
+{/block}
+
+{include file="public/footer" /}
+
+<!--请在下方写此页面业务相关的脚本-->
+{block name="js"}
+    用户自定义js脚本
+{/block}
+<!--/请在上方写此页面业务相关的脚本-->
+
+</body>
+</html>
+
+<!--base（父模板）基础模板-->

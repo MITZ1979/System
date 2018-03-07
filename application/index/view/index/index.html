@@ -1,0 +1,19 @@
+﻿{extend name="public/base" /}
+
+{block name="seo"}
+<title>{$title|default="页面标题"}</title>
+<meta name="keywords" content="{$keywords|default='页面关键字 '}">
+<meta name="description" content="{$description|default='页面描述'}">
+</head>
+<body>
+{/block}
+{block name="content"}
+    {block name="layout" / }
+{/block}
+<!--写空模板的js文件，会自动删除js基础模板中继承的文件-->
+{block name="js"}
+{/block}
+<!--/请在上方写此页面业务相关的脚本-->
+
+</body>
+</html>
